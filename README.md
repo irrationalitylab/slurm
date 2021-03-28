@@ -115,8 +115,26 @@ To check how many cores each of the computing nodes supports, after ssh to a sub
    ```sh
    scontrol show nodes
    ```
-
-
+   
+For instance, the node046 information is displayed here:
+   ```sh
+   NodeName=node046 Arch=x86_64 CoresPerSocket=16 
+   CPUAlloc=0 CPUTot=2 CPULoad=0.00
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=node046 NodeHostName=node046 Version=18.08
+   OS=Linux 4.19.0-12-amd64 #1 SMP Debian 4.19.152-1 (2020-10-18) 
+   RealMemory=251000 AllocMem=0 FreeMem=255184 Sockets=2 Boards=1
+   State=IDLE ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=slurm 
+   BootTime=2020-12-07T13:07:19 SlurmdStartTime=2021-03-16T17:56:24
+   CfgTRES=cpu=2,mem=251000M,billing=2
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   ```
 
 ### Prerequisites
 
