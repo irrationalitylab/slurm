@@ -35,10 +35,10 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#Preparing a submission script">Preparing a submission script</a></li>
+    <li><a href="#preparing-a-submission-script">Preparing a submission script</a></li>
     <li><a href="#getting-Started">Getting Started</a></li>
     <li><a href="#rules">Rules</a></li>
-    <li><a href="#checkp-job-status">Check job status</a></li>
+    <li><a href="#check-job-status">Check job status</a></li>
     <li><a href="#display-outputs">Display outputs</a></li>
   </ol>
 </details>
