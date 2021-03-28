@@ -53,25 +53,11 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#Preparing a submission script">Preparing a submission script</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#Rules">Rules</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#Preparing a submission script">Preparing a submission script</a></li>
+    <li><a href="#getting-Started">Getting Started</a></li>
+    <li><a href="#rules">Rules</a></li>
+    <li><a href="#checkp-job-status">Check job status</a></li>
+    <li><a href="#display-outputs">Display outputs</a></li>
   </ol>
 </details>
 
@@ -145,7 +131,7 @@ For instance, the node046 supports maxi. 32 workers:
 
 Be cautious about the jobs you plan to submit, the rule is max. 50 cores, with max 10gb memory each.
 
-## Check job status:
+## Check job status
 Check the job submitted by a specific user:
    ```sh
    squeue -u username
@@ -155,7 +141,7 @@ Check the jobs submitted by all users:
    squeue
    ```
 
-## Display outputs:
+## Display outputs
    ```sh
    cat slurm-*
    ```
