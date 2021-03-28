@@ -80,8 +80,6 @@
 <!-- ABOUT THE PROJECT -->
 ## Preparing a submission script
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 A submission script is a shell script that describes the processing to carry out (e.g. the application, its input and output, etc.) and requests computer resources (number of cpus, amount of memory, etc.) to use for processing. Here is an example submission script ('slurmtest_par.sh') that
 
    ```sh
@@ -102,8 +100,11 @@ A submission script is a shell script that describes the processing to carry out
 # execute a matlab script 'main.m':
 matlab -nodisplay -nodesktop -r main
    ```
-
-
+To submit the job, type the command:
+   ```sh
+   sbatch ./slurmtest_par.sh
+   ```
+   
 <!-- GETTING STARTED -->
 ## Getting Started
 
