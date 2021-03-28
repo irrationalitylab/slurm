@@ -80,7 +80,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Preparing a submission script
 
-A submission script is a shell script that describes the processing to carry out (e.g. the application, its input and output, etc.) and requests computer resources (number of cpus, amount of memory, etc.) to use for processing. Here is an example submission script ('slurmtest_par.sh') that
+A submission script is a shell script that describes the processing to carry out (e.g. the application, its input and output, etc.) and requests computer resources (number of cpus, amount of memory, etc.) to use for processing. Here is an example submission script (slurmtest_par.sh) that executes a matlab function (RLpar_model.m) that simulates a Rescorla–Wagner agent and estimates the maximum-likelihood model parameters:
 
    ```sh
 #!/bin/bash
@@ -93,7 +93,7 @@ A submission script is a shell script that describes the processing to carry out
 #SBATCH --mail-type=END
 #SBATCH --mail-user=y.cao@uke.de
 
-# Alternatively, you can call 16 cores using the following instead of ntasks
+# Alternatively, you can call 16 workers using the following instead of ntasks
 # SBATCH --sockets-per-node=2
 # SBATCH --cores-per-socket=8
     
@@ -135,24 +135,18 @@ For instance, the node046 supports maxi. 32 workers:
    ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
    ```
 
-### Rules
+## Rules
 
 Be cautious about the jobs you plan to submit, the rule is max. 50 cores, with max 10gb memory each.
 
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+## Check job status:
+Check the job submitted by a specific user:
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   squeue -u username
    ```
-3. Install NPM packages
+Check the jobs submitted by all users:
    ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
+   squeue
    ```
 
 
