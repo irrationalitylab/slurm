@@ -84,6 +84,24 @@
 
 A submission script is a shell script that describes the processing to carry out (e.g. the application, its input and output, etc.) and requests computer resources (number of cpus, amount of memory, etc.) to use for processing.
 
+   ```sh
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --mem=10G
+# SBATCH --ntasks=16
+#SBATCH --time=00:10:00
+#SBATCH --job-name=testRL
+#SBATCH --mail-type=END
+#SBATCH --mail-user=y.cao@uke.de
+#SBATCH --nodelist=node043
+
+#SBATCH --sockets-per-node=1
+#SBATCH --cores-per-socket=16
+    
+matlab -nodisplay -nodesktop -r main
+   ```
+
+
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
 * You shouldn't be doing the same tasks over and over like creating a README from scratch
