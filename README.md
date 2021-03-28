@@ -108,8 +108,15 @@ To submit the job, type the command:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Currently, node020 and node022 are the 2 nodes for submitting slurm jobs.
+node035, 036, 041, 042, 043, 046 are computing nodes.
+
+To check how many cores each of the computing nodes supports, after ssh to a submitting node (e.g., ssh -X username@node020), type the command:
+   ```sh
+   scontrol show nodes
+   ```
+
+
 
 ### Prerequisites
 
