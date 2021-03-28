@@ -54,7 +54,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#Preparing a submission script">Preparing a submission script</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -78,7 +78,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Preparing a submission script
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
