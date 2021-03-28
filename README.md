@@ -82,7 +82,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+A submission script is a shell script that describes the processing to carry out (e.g. the application, its input and output, etc.) and requests computer resources (number of cpus, amount of memory, etc.) to use for processing.
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
