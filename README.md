@@ -115,8 +115,7 @@ To check how many cores each of the computing nodes supports, after ssh to a sub
    ```sh
    scontrol show nodes
    ```
-   
-For instance, the node046 information is displayed here:
+For instance, the node046 supports maxi. 32 workers:
    ```sh
    NodeName=node046 Arch=x86_64 CoresPerSocket=16 
    CPUAlloc=0 CPUTot=2 CPULoad=0.00
@@ -136,13 +135,9 @@ For instance, the node046 information is displayed here:
    ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
    ```
 
-### Prerequisites
+### Rules
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Be cautious about the jobs you plan to submit, the rule is max. 50 cores, with max 10gb memory each.
 
 ### Installation
 
