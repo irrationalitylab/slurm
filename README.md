@@ -82,22 +82,24 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-A submission script is a shell script that describes the processing to carry out (e.g. the application, its input and output, etc.) and requests computer resources (number of cpus, amount of memory, etc.) to use for processing.
+A submission script is a shell script that describes the processing to carry out (e.g. the application, its input and output, etc.) and requests computer resources (number of cpus, amount of memory, etc.) to use for processing. Here is an example submission script that
 
    ```sh
 #!/bin/bash
+#SBATCH --job-name=testRL
+#SBATCH --nodelist=node043
 #SBATCH --nodes=1
 #SBATCH --mem=10G
-# SBATCH --ntasks=16
-#SBATCH --time=00:10:00
-#SBATCH --job-name=testRL
+#SBATCH --ntasks=16
+#SBATCH --time=00:10:00 # format is hh:mm:ss
 #SBATCH --mail-type=END
 #SBATCH --mail-user=y.cao@uke.de
-#SBATCH --nodelist=node043
 
-#SBATCH --sockets-per-node=1
-#SBATCH --cores-per-socket=16
+# Alternatively, you can call 16 cores using the following instead of ntasks
+# SBATCH --sockets-per-node=2
+# SBATCH --cores-per-socket=8
     
+# execute a matlab script 'main.m':
 matlab -nodisplay -nodesktop -r main
    ```
 
