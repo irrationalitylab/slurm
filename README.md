@@ -105,7 +105,10 @@ To submit the batch job, type the command:
    sbatch ./slurmtest_par.sh
    ```
 In the terminal window, it will then show the information: `Submitted batch job 546`, with a unique job index e.g., 546.
-To terminate the job: `scancel 546`
+To terminate the job:
+   ```sh
+   scancel 546
+   ```
    
    
 <!-- GETTING STARTED -->
