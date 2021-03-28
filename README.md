@@ -155,6 +155,23 @@ Check the jobs submitted by all users:
    squeue
    ```
 
+## Display outputs:
+   ```sh
+   cat slurm-*
+   ```
+   For instance, after completing the RL model fitting, it will display the matlab outputs:
+   ```sh
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 16).
+>>>>>>> ok, we have simulated some data >>>>>>>
+>>>>>>> ok, we have simulated some data >>>>>>>
+>>>>>>> ok, we have simulated some data >>>>>>>
+Elapsed time is 12.020845 seconds.
+true alpha = 0.300000, estimated alpha = 0.294941
+true beta = 2.600000, estimated beta = 2.553429
+Parallel pool using the 'local' profile is shutting down.
+   ``` 
+   
 
 
 <!-- USAGE EXAMPLES -->
