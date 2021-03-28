@@ -100,10 +100,13 @@ A submission script is a shell script that describes the processing to carry out
 # execute a matlab script 'main.m':
 matlab -nodisplay -nodesktop -r main
    ```
-To submit the job, type the command:
+To submit the batch job, type the command:
    ```sh
    sbatch ./slurmtest_par.sh
    ```
+In the terminal window, it will then show the information: `Submitted batch job 546`, with a unique job index e.g., 546.
+To terminate the job: `scancel 546`
+   
    
 <!-- GETTING STARTED -->
 ## Getting Started
