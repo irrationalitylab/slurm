@@ -48,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Preparing a submission script
 
-A submission script is a shell script that describes the processing to carry out (e.g. the application, its input and output, etc.) and requests computer resources (number of cpus, amount of memory, etc.) to use for processing. Here is an example submission script (slurmtest_par.sh) that executes a matlab function ([RLpar_model.m](https://github.com/irrationalitylab/slurm/blob/master/RLdemo/RLpar_model.m)) that simulates a Rescorla–Wagner agent and estimates the maximum-likelihood model parameters (you can download all relevant scripts [here] (https://github.com/irrationalitylab/slurm/tree/master/RLdemo):
+A submission script is a shell script that describes the processing to carry out (e.g. the application, its input and output, etc.) and requests computer resources (number of cpus, amount of memory, etc.) to use for processing. Here is an example submission script (slurmtest_par.sh) that executes a matlab function ([RLpar_model.m](https://github.com/irrationalitylab/slurm/blob/master/RLdemo/RLpar_model.m)) that simulates a Rescorla–Wagner agent and estimates the maximum-likelihood model parameters (you can download all relevant scripts [here](https://github.com/irrationalitylab/slurm/tree/master/RLdemo):
 
    ```sh
 #!/bin/bash
